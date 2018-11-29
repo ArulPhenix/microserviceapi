@@ -1,0 +1,12 @@
+spring:
+  profiles: dev
+name: dev-YAML
+environment: dev
+datasource:
+  inet:
+    url:  jdbc:mysql://127.0.0.1:3306;databaseName=INET
+    username: root
+    password: admin
+    driver-class-name: com.mysql.jdbc.Driver
+    test-on-borrow: true
+    validation-query: SELECT 1
